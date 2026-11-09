@@ -155,7 +155,7 @@ test('TEST-10-GREET-A-CAT-WITH-NAME', async ({ page }) => {
     // None
 
     // Execution steps
-    await page.goto("https://cs1632.appspot.com/greet-a-cat/Jennyanydots");
+    await page.goto("http://localhost:8080/greet-a-cat/Jennyanydots");
 
     // Postconditions
     await expect(page.getByText('Meow! from Jennyanydots.')).toBeVisible();
